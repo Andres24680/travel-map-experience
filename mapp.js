@@ -1,3 +1,3 @@
-//map object 
+//users current location 
 
-//
+//leaflet map
