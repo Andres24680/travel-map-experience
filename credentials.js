@@ -1,1 +1,1 @@
-//api keys 
+const apiKey = fsq3aWRxTdiiWmh1Z96vkRTSTQT4KY0+GJWyaVcQ/WsWndU=

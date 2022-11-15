@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailored Travel</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geolocation Project</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
     crossorigin=""/>
-     <!-- Make sure you put this AFTER Leaflet's CSS -->
- <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
- integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
- crossorigin=""></script>
+
+
+    <!-- JS -->
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
     <script src="credentials.js"></script>
-    <script src="./mapp.js"></script>
+    <script defer src="mapp.js"></script>
     <style>
-  #map { 
+      #map {
         height: 600px;
-        background-color: #ccc;
-    }
-    .leaflet-popup-content-wrapper {
+        background-color: white;
+      }
+     
+      .leaflet-popup-content-wrapper {
         width: 100%;
-    }
+      }
+      #submit {
+        background-color: blueviolet;
+      }
+      
+      
     </style>
-</head>
-<body>
- <form>
-    <select  id="locations">
+  </head>
+  <body>
+    <form>
+      <select id="business">
         <option value="restaurant">Restaurants</option>
         <option value="coffee">Coffee Shops</option>
         <option value="hotel">Hotels</option>
         <option value="market">Markets</option>
-    </select>
- <button id="sumbit" type="button" >SUBMIT</button>
-
-
- </form>
+      </select>
+      <button id="submit">Submit</button>
+    </form>
     <div id="map"></div>
-</body>
+  </body>
 </html>
